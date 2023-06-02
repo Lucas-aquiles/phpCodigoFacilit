@@ -68,3 +68,49 @@ No cuentas con los dias nublados paapaa
 Frase;
 echo $frase;
 ?>
+
+<?php
+$apellido = substr("Martinez Mendez Gallego",8,6);
+echo $apellido; 
+?>
+
+<!-- susbtraer palabras de un string -->
+
+<?php 
+$bienvenida = "bienvenidos al mundo de la programacion";
+$palabra ="programacion";
+$buscar = strpos ($bienvenida,$palabra);
+$extracion = substr ($bienvenida,$buscar);
+echo $extracion;
+?>
+
+<!-- reemplazar y formato -->
+
+<?php 
+$RFC = "91 75 1A EC C7";
+$buscar= " ";
+$reemplazar = ";";
+$resultado= str_replace($buscar,$reemplazar,$RFC);
+echo $resultado;
+?>
+
+<!-- operador nave espacial   1A
+<=>
+0 ambis vakires sean igual
+-1 esvalor es menor
+1 el valor es mayor
+
+-->
+<?php 
+$edad = 3;
+
+var_dump($edad <=>6);
+?>
+
+<!-- operador elvis y fusion null -->
+<?php 
+$valores = 8;
+$aprobo = ($valores)?:5;
+echo $aprobo;
+// si el dato de valores es null me vas devolver 5
+?>
